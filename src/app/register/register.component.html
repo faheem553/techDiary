@@ -1,0 +1,148 @@
+<app-header></app-header>
+<div class="mainDiv">
+  <div class="registerDiv">Registration Form</div>
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <div>
+      <label class="labelField">User Name<i class="bi bi-person"></i></label>
+    </div>
+    <div>
+      <input
+        formControlName="username"
+        type="text"
+        placeholder="Enter User Name"
+        class="inputField"
+      />
+    </div>
+    <p
+      *ngIf="
+        registerForm.controls['username'].invalid &&
+        (registerForm.controls['username'].dirty ||
+          registerForm.controls['username'].touched)
+      "
+      class="text-danger"
+    >
+      <small *ngIf="registerForm.controls['username'].errors?.['required']">
+        *Username is required.
+      </small>
+      <small *ngIf="registerForm.controls['username'].errors?.['minlength']">
+        *Minimum 3 character required
+      </small>
+    </p>
+    <div>
+      <label class="labelField">Mobile<i class="bi bi-phone"></i></label>
+    </div>
+    <div>
+      <input
+        formControlName="mobile"
+        type="text"
+        (keypress)="numericOnly($event)"
+        placeholder="Enter Your Mobile No."
+        class="inputField"
+      />
+    </div>
+    <p
+      *ngIf="
+        registerForm.controls['mobile'].invalid &&
+        (registerForm.controls['mobile'].dirty ||
+          registerForm.controls['mobile'].touched)
+      "
+      class="text-danger"
+    >
+      <small *ngIf="registerForm.controls['mobile'].errors?.['required']">
+        *Mobile Number is required.
+      </small>
+      <small *ngIf="registerForm.controls['mobile'].errors?.['minlength']"
+        >*Minimum 10 Numbers required</small
+      >
+      <small *ngIf="registerForm.controls['mobile'].errors?.['maxlength']"
+        >*Maximum 11 Numbers only</small
+      >
+    </p>
+    <div>
+      <label class="labelField">Email<i class="bi bi-envelope"></i></label>
+    </div>
+    <div>
+      <input
+        formControlName="email"
+        type="Email"
+        placeholder="Enter Your Email Id"
+        class="inputField"
+      />
+    </div>
+    <p
+      *ngIf="
+        registerForm.controls['email'].invalid &&
+        (registerForm.controls['email'].dirty ||
+          registerForm.controls['email'].touched)
+      "
+      class="text-danger"
+    >
+      <small *ngIf="registerForm.controls['email'].errors?.['required']">
+        *Email is required.
+      </small>
+      <small *ngIf="registerForm.controls['email'].errors?.['email']">
+        *Valid Email required.
+      </small>
+    </p>
+    <div>
+      <label class="labelField">Password<i class="bi bi-key"></i></label>
+    </div>
+    <div>
+      <input
+        formControlName="password"
+        type="password"
+        placeholder="Enter Your Password"
+        class="inputField"
+      />
+    </div>
+    <p
+      *ngIf="
+        registerForm.controls['password'].invalid &&
+        (registerForm.controls['password'].dirty ||
+          registerForm.controls['password'].touched)
+      "
+      class="text-danger"
+    >
+      <small *ngIf="registerForm.controls['password'].errors?.['required']">
+        *Password is required.
+      </small>
+      <small *ngIf="registerForm.controls['password'].errors?.['minlength']">
+        *Minimum 6 character required
+      </small>
+    </p>
+    <!-- <div>
+        <label class="labelField">Confirm Password</label>
+    </div>
+    <div>
+        <input formControlName="confirmPassword" type="text" class="inputField" >
+    </div>
+    <p *ngIf="registerForm.controls['confirmPassword'].invalid && (registerForm.controls['confirmPassword'].dirty || registerForm.controls['confirmPassword'].touched)" class="text-danger">
+        <small *ngIf="registerForm.controls['confirmPassword'].errors?.['required']">
+        *Confirm Password is required.
+    </small>
+    <small *ngIf="registerForm.controls['password']!==registerForm.controls['confirmPassword']"> Confirm Password should macth with password</small>
+</p>  -->
+    <!-- <input type="checkbox" >
+     <label>Please Tick to confirm <a href="">Term and Condition</a></label> -->
+
+    <div class="submitDiv">
+      <input
+        [disabled]="!registerForm.valid"
+        type="submit"
+        value="submit"
+        class="submitInput"
+      />
+    </div>
+    <div class="ancherDiv">
+      If Already have account please<a routerLink="/login">
+        click here to Login</a
+      >
+    </div>
+  </form>
+</div>
+<<<<<<< HEAD
+<!-- heloo -->
+<!-- how are you -->
+=======
+<!-- this is comment -->
+>>>>>>> 1a2cf4daf627967297af26bd197beb269fd64b5a

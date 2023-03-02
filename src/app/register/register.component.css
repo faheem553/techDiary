@@ -1,0 +1,53 @@
+
+
+.mainDiv{
+    margin: 5% auto;
+    width:30%;
+    height:100%;
+    background-color: white;
+    padding: 10px;
+    /* border-radius: 20px; */
+    box-shadow: 20px;
+    border: 2px solid;
+    background-color: #ffc107;
+    /* border-color: orange; */
+
+}
+.registerDiv{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.labelField{
+    font-size: 20px;
+    color: white;
+    /* font-weight: bold; */
+}
+.inputField{
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.submitInput{
+    width:70%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+}
+.submitDiv{
+    text-align: center;
+    padding: 20px;
+
+}
+.submitInput:hover{
+     background-color: orange;
+     color: white;
+     transition: 0.5s;
+}
+.ancherDiv{
+    color:white;
+}

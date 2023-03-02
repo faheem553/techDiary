@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "task_name": "jsdkjf",
+      "date": "Thu, 06 Oct 2022 13:45:28 GMT",
+      "createdBy": 2,
+      "updatedDate": "",
+      "userlogo": ""
+    },
+    {
+      "id": 4,
+      "task_name": "kjnfkw",
+      "date": "Wed, 12 Oct 2022 07:34:22 GMT",
+      "createdBy": 3,
+      "updatedDate": ""
+    },
+    {
+      "id": 5,
+      "task_name": "hello ansari wasim",
+      "date": "Tue, 25 Oct 2022 09:06:53 GMT",
+      "createdBy": "e8026d8a-4982-4b06-a968-f08e8cc5b328",
+      "updatedDate": ""
+    }
+  ],
+  "signup": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "username": "ansari faheem",
+      "mobile": "21453642141",
+      "email": "ansari@gmail.com",
+      "password": "123456",
+      "userData": "",
+      "id": 2
+    },
+    {
+      "username": "khan bhai",
+      "mobile": "1245997225",
+      "email": "khan@gmail.com",
+      "password": "123456",
+      "userData": "",
+      "id": 3
+    },
+    {
+      "username": "khan bhai",
+      "mobile": "1234567891",
+      "email": "ansri@gmail.com",
+      "password": "123456",
+      "userData": "",
+      "id": 4
+    },
+    {
+      "username": "abc",
+      "mobile": "1234567891",
+      "email": "abc@gmail.com",
+      "password": "123456",
+      "userData": "",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
